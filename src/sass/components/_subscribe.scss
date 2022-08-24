@@ -41,8 +41,20 @@
   padding: 12px;
   font-size: 12px;
   line-height: 150%;
-  border: 0.854167px solid #ffe550;
   border-radius: 30px;
+  outline: transparent;
+
+  &:valid {
+    border: 0.854167px solid $dark-green-color;
+  }
+
+  &:invalid {
+    border: 0.854167px solid #ff705d;
+  }
+
+  &:placeholder-shown {
+    border: 0.854167px solid $yellow-main-color;
+  }
 
   @media screen and (min-width: 768px) {
     width: 395px;
