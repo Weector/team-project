@@ -1,12 +1,69 @@
 // OFFERINGS
 
+.section__offering {
+    padding-top: 41px;
+    padding-bottom: 60px;   
+    background-image: url(../images/offerings/offerings-bg320.png);
+}
+
+.offering__apple-box {
+    position: relative;
+    width: 256px;
+    height: 256px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    background-color: $white-color;
+    border-radius: 50%;
+    
+}
+
+.offerings__apple-img {
+    position: absolute;
+    left: 28px;
+    top: -40px;
+    
+}
+
 .offerings__title {
+    margin-bottom: 28px;
     font-size: 28px;
     line-height: calc(33/28);
 }
 
 .offerings__text {
-    font-weight: 400;
-        font-size: 14px;
-        line-height: calc(16/14);
+    margin-bottom: 28px;
+    line-height: calc(16/14);
+}
+
+.offerings__icons {
+    margin-bottom: 8px;
+    fill: $dark-green-color;
+}
+
+.offerings__icons-title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: calc(21/18);
+}
+
+.offerings__icons-text {
+    margin-bottom: 28px;
+    line-height: calc(16/14);
+}
+
+.offerings__btn {
+    margin-right: 20.5px;
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    line-height: 150%;
+    background: $white-color;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+}
+
+.offerings__btn-text {
+    margin-right: 7.5px;
+    font-size: 13.6667px;
 }
