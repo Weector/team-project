@@ -1,26 +1,94 @@
 .subscribe {
-  padding: 50px 20px 60px 20px;
-  outline: 2px solid red;
+  padding: 50px 20px 122px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 156px 32px 100px 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 46px 0px 36px 0px;
+  }
+}
+
+.container--position {
+  position: relative;
 }
 
 .subscribe__title {
   margin-bottom: 20px;
   font-size: 28px;
   line-height: 120%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+  }
 }
 
 .subscribe__text {
   margin-bottom: 40px;
-}
 
+  @media screen and (min-width: 768px) {
+    width: 656px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.subscribe__form {
+  position: relative;
+}
 .subscribe__input {
-  width: 279px;
+  width: 100%;
   padding: 12px;
+  font-size: 12px;
+  line-height: 150%;
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 395px;
+    margin-right: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 32px;
+  }
 }
 
 .subscribe__button {
-  padding-top: 10px;
-  padding-bottom: 11px;
+  width: 106px;
+  height: 42px;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    transform: translateY(100%);
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
+}
+
+.subscribe__img {
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    top: -17px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 161px;
+    height: 78px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: -20px;
+    right: 0;
+    transform: translateY(-100%);
+    width: 281px;
+    height: 136px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 0;
+    right: 0;
+    transform: translateY(-18%);
+  }
 }
