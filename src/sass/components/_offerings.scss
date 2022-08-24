@@ -1,6 +1,12 @@
 // OFFERINGS
 
-.container {
-    padding-top: 41px;
-    padding-bottom: 60px;
+.offerings__title {
+    font-size: 28px;
+    line-height: calc(33/28);
+}
+
+.offerings__text {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: calc(16/14);
 }
