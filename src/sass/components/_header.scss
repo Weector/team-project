@@ -1,0 +1,144 @@
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 54px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-nav {
+    margin-left: auto;
+
+    @media screen and (max-width: (768px-0.02)) {
+        background-color: #fff;
+        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+        border-radius: 30px 0px 30px 30px;
+        display: none;
+
+        @media screen and (max-width: (768px-0.02)) {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+
+            overflow: hidden;
+
+
+        }
+
+        @media screen and (min-width: 768px) {
+            list-style: none;
+            padding: 0px;
+        }
+    }
+}
+
+.header-nav.is-open {
+    display: flex;
+}
+
+.header-nav__list {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+
+    @media screen and (max-width: (768px-0.02)) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header-nav-link {
+    text-decoration: none;
+
+    font-size: 16px;
+    line-height: 1.88;
+    color: $text-color-black;
+
+    @media screen and (max-width: (768px-0.02)) {
+        display: block;
+        padding: 16px;
+        min-width: 130px;
+
+        &:hover,
+        &:focus {
+            background-color: $light-green-color;
+        }
+    }
+
+    @media screen and(min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.14;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            font-weight: 500;
+            font-size: 14px;
+            color: $light-green-color;
+        }
+    }
+}
+
+.header-nav__item {
+    @media screen and (min-width: 768px) {
+        margin-right: 28px;
+       
+    }
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.header__button {
+    margin-left: 28px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: right;
+    height: 32px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.menu-button {
+    // width: 28px;
+    // height: 28px;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+        position: absolute;
+    }
+}
+
+.menu-button__icon {
+    fill: $dark-green-color;
+}
+
+.menu-button__menu {
+    display: block;
+}
+
+.menu-button.is-open .menu-button__menu {
+    display: none;
+}
+
+.menu-button__close {
+    display: none;
+}
+
+.menu-button.is-open .menu-button__close {
+    display: block;
+}
