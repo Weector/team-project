@@ -1,0 +1,76 @@
+<!-- modal -->
+<script src="/js/modal.js" type="module"></script>
+<div class="backdrop is-hidden" data-modal>
+  <div class="hero-modal">
+    <form class="hero-modal__container" name="registration form">
+      <p class="hero-modal__title">Leave your details, we will call you back</p>
+      <label class="hero-modal__item">
+        <p>Name</p>
+        <input type="text" class="hero-modal__input" />
+         <svg class="hero-modal__icon" width="18" height="18">
+              <use href="/src/images/icons/icons.svg#icon-form-person"></use>
+            </svg> 
+      </label>
+      <label class="hero-modal__item">
+        <p>Phone</p>
+        <input type="tel" class="hero-modal__input" />
+         <svg class="hero-modal__icon" width="18" height="18">
+              <use href="/src/images/icons/icons.svg#icon-form-phone"></use>
+            </svg> 
+      </label>
+      <p>Delivery address</p>
+      <div class="city">
+        <label class="city__item">
+          <p class="city__text">City</p>
+          <input class="city__input" type="text" />
+        </label>
+        <label class="city__item">
+          <p class="city__text">Street</p>
+          <input class="city__input" type="text" />
+        </label>
+      </div>
+      <div class="house">
+        <label class="house__item">
+          <p class="city__text">House</p>
+          <input class="house__input" type="text" />
+        </label>
+        <label class="house__item">
+          <p class="city__text">Houseroom</p>
+          <input class="house__input" type="text" />
+        </label>
+      </div>
+      <p>Comment on the order</p>
+      <textarea
+        class="hero-modal__textarea"
+        name="comment"
+        rows="10"
+        placeholder="Enter the text"
+      ></textarea>
+
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" />
+        <span class="checkbox__icon">
+          <svg width="16" height="16">
+            <use class="check-on" href="/src/images/icons/icons.svg#check"></use>
+            <use
+              class="check-off"
+              href="/src/images/icons/icons.svg#checkbox"
+            ></use>
+          </svg>
+        </span>
+        <span class="checkbox__text"
+          >By pressing the "Make an order" button, I give my consent to the
+          processing my personal data
+          <a class="checkbox__link" href="./index.html"
+            >Consent to the processing of personal data</a
+          >
+        </span>
+      </label>
+      <button type="submit" class="hero-modal__submit">To order</button>
+    </form>
+    <button class="hero-modal__btn" type="button" data-modal-close>
+       <svg class="modal-icon-close" width="18" height="18">
+            <use href="/src/images/icons/icons.svg#icon-close"></use>
+          </svg> 
+  </div>
+</div>
