@@ -29,12 +29,17 @@
         <label class="">
           <input
             class="footer-form__input"
-            s
             type="email"
             name="mail"
             placeholder="Enter your email"
+            required
           />
-          <span> Not a valid email address (example@email.com) </span>
+          <span class="subscribe__warning--footer">
+            <svg class="subscribe__icon--footer" width="11px" height="11px">
+              <use href="./images/icons/icons.svg#warning"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </span>
         </label>
 
         <button type="submit" class="button footer-form__button">

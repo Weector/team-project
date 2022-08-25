@@ -36,6 +36,28 @@
   }
 }
 
+.footer-form__input:not(:placeholder-shown):focus:invalid:required
+  ~ .subscribe__warning--footer {
+  opacity: 1;
+}
+
+.subscribe__warning--footer {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: translateY(-100%);
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 150%;
+  color: #ff705d;
+  opacity: 0;
+}
+
+.subscribe__icon--footer {
+  margin-right: 4px;
+}
+
 .footer-form__button {
   width: 102px;
   height: 42px;
