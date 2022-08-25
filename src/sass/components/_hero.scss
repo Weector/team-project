@@ -97,8 +97,8 @@
 
 .slider__field {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-content: stretch;
   width: 320px;
   height: 320px;
   border: 14px solid $yellow-main-color;
@@ -114,10 +114,8 @@
 .slider__img {
   display: flex;
   flex-grow: 1;
-  @media screen and (min-width: 1280px) {
-    width: 580px;
-    height: 580px;
-  }
+  max-width: 100%;
+  height: auto;
 }
 
 .hero-slider__btn {
