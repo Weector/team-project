@@ -115,12 +115,25 @@
     position: absolute;
     top: 164px;
     right: 5px;
+
+    @media screen and (min-width: 1280px) {
+      top: 294px;
+    }
   }
 
   &:first-child {
     position: absolute;
     top: 164px;
     left: 5px;
+
+    @media screen and (min-width: 1280px) {
+      top: 294px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
   }
 }
 
