@@ -1,5 +1,10 @@
+.header{
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
 .header__container {
+   position: relative;
     display: flex;
+   
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -109,8 +114,6 @@
 }
 
 .menu-button {
-    // width: 28px;
-    // height: 28px;
     background-color: transparent;
     border: transparent;
     position: absolute;
@@ -126,7 +129,13 @@
 
 .menu-button__icon {
     fill: $dark-green-color;
+
+    &:hover, &:focus{
+        fill: $yellow-main-color;
+    }
 }
+
+
 
 .menu-button__menu {
     display: block;
