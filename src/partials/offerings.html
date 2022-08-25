@@ -1,21 +1,27 @@
 <!--OFFERINGS-->
 
-<section class="section__offering" id="offerins">
+<section class="section__offering" id="offerings">
   <div class="container">
     <div class="offering__apple-box">
       <div class="offerings__apple-border">
         <img
-          srcset="./images/offerings/apple258.png 258w"
-          sizes="(min-widht: 768px) 258px"
+          srcset="
+            ./images/offerings/apple202.png 202w,
+            ./images/offerings/apple258.png 258w,
+            ./images/offerings/apple396.png 396w,
+            ./images/offerings/apple404.png 404w,
+            ./images/offerings/apple515.png 516w,
+            ./images/offerings/apple792.png 792w
+          "
+          sizes="(min-width: 1280px) 396px, (min-width: 768px) 258px, (min-width: 480px) 202px, 100vw"
           class="offerings__apple-img"
           src="./images/offerings/apple202.png"
           alt="an apple"
-          width="258"
         />
         <div class="offerings__shadow"></div>
       </div>
     </div>
-    <div>
+    <div class="offerings__flex-desktop">
       <h2 class="offerings__title">What’s Special About Our Offerings</h2>
       <p class="offerings__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse

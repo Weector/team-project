@@ -15,9 +15,10 @@
         }
 
     @media screen and (min-width: 768px) {
+            margin-top: -108px;    
             position: relative;
             width: 100%;
-            padding-top: 100px;
+            padding-top: 200px;
             padding-bottom: 100px;
             background-image: url(../images/offerings/offerings-bg-tablet.svg);
             background-repeat: no-repeat;
@@ -27,10 +28,22 @@
         }
 
     @media screen and (min-width: 1280px) {
-            width: 1280px;
+            position: relative;
+            width: 100%;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-image: url(../images/offerings/offerings-bg-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: top;
             padding-left: 16px;
             padding-right: 16px;
         }
+}
+
+.offerings__flex-desktop {
+    padding-left: 600px;
+    padding-right: 50px;
 }
 
 .offering__apple-box {
@@ -55,6 +68,18 @@
         border-radius: 50%;
     }
     
+        @media screen and (min-width: 1280px) {
+            position: absolute;
+            left: 40px;
+            top: 145px;
+            width: 502px;
+            height: 502px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: $white-color;
+            border-radius: 50%;
+            
+        }
 }
 
 .offerings__apple-border {
@@ -76,6 +101,15 @@
      border-radius: 50%;
     }
 
+        @media screen and (min-width: 1280px) {
+            position: absolute;
+            left: -24px;
+            top: -24px;
+            width: 550px;
+            height: 550px;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+        }
 }
 
 .offerings__apple-img {
@@ -84,11 +118,18 @@
     top: -33px;
 
     @media screen and (min-width: 768px) {
-     position: absolute;
-     left: 46px;
-     top: -43px;
+      position: absolute;
+      left: 46px;
+      top: -43px;
     }
 
+        @media screen and (min-width: 1280px) {
+          position: absolute;
+          left: 77px;
+          top: -55px;
+        } 
+
+        
 }
 
 .offerings__shadow {
@@ -110,7 +151,20 @@
                             background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%,
                                             rgba(105, 105, 105, 0) 100%);
                                               filter: blur(13.2364px);
+
                     }
+
+                     @media screen and (min-width: 1280px) {
+                        position: absolute;
+                            left: 144px;
+                            top: 400px;
+                            width: 252px;
+                            height: 87px;
+                            background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%,
+                                    rgba(105, 105, 105, 0) 100%);
+                            filter: blur(13.2364px);
+                     }
+                                        
 }
 
 .offerings__title {
@@ -118,23 +172,34 @@
     font-size: 28px;
     line-height: calc(33/28);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
         padding-top: 554px;
         padding-right: 62px;
         font-size: 42px;
         line-height: calc(49/42);
     }
+
+        @media screen and (min-width: 1280px) {
+            padding-top: 80px;
+                font-size: 42px;
+                line-height: calc(49/42);
+        }
 }
 
 .offerings__text {
     margin-bottom: 28px;
     line-height: calc(16/14);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
         margin-right: 200px;
         font-size: 16px;
         line-height: calc(19/16);
     }
+
+        @media screen and (min-width: 1280px) {
+                font-size: 16px;
+                line-height: calc(19/16);
+        }
 }
 
 .offerings__flex {
@@ -185,11 +250,13 @@
     background: $white-color;
     border: 2px solid #7EB101;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .offerings__link-text {
     margin-right: 7.5px;
     font-size: 13.6667px;
+    cursor: pointer;
 
         font-size: 14px;
         line-height: calc(16/14);
