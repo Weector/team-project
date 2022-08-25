@@ -53,7 +53,7 @@
     font-size: 20px;
     line-height: calc(23 / 20);
 
-    color: #212121;
+    color: $black-color;
   }
 
   &__item {
@@ -69,7 +69,7 @@
     padding: 0;
     padding-left: 42px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $dark-green-color;
     border-radius: 4px;
 
     transition-property: border, border-radius;
@@ -81,7 +81,7 @@
   &__input:focus,
   &__input:hover,
   &__input:focus-visible {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $light-green-color;
     border-radius: 4px;
     outline: none;
   }
@@ -99,15 +99,15 @@
 
   &__input:focus + &__icon,
   &__input:hover + &__icon {
-    fill: var(--accent-color);
+    fill: $light-green-color;
   }
 
   &__textarea {
     resize: none;
-    height: 120px;
+    height: 60px;
     padding: 12px 16px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $dark-green-color;
     border-radius: 4px;
 
     transition-property: border, border-radius;
@@ -118,7 +118,7 @@
     &:focus,
     &:hover,
     &:focus-visible {
-      border: 1px solid var(--accent-color);
+      border: 1px solid $light-green-color;
       border-radius: 4px;
       outline: none;
     }
@@ -139,12 +139,21 @@
 
     letter-spacing: 0.06em;
 
-    color: var(--white-color);
+    color: $text-color-black;
 
     border: 0;
-    background-color: var(--accent-color);
+    background-color: $light-green-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    &:focus,
+    &:hover,
+    &:focus-visible {
+      border: 1px solid $light-green-color;
+      border-radius: 4px;
+      background-color: $dark-green-color;
+      outline: none;
+    }
   }
 
   &__submit {
@@ -162,7 +171,7 @@
     align-items: center;
 
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: $light-green-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     transition-property: fill;
@@ -172,14 +181,67 @@
 
     &:hover,
     &:focus {
-      fill: var(--accent-color);
+      fill: white;
     }
   }
   @media screen and (min-width: 480px) {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 528px;
+  }
+}
+
+.city {
+  display: flex;
+  gap: 20px;
+  &__item {
+    width: calc((100% - 20px) / 2);
+  }
+  &__input {
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid $dark-green-color;
+    border-radius: 4px;
+
+    transition-property: border, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    &:focus,
+    &:hover,
+    &:focus-visible {
+      border: 1px solid $light-green-color;
+      border-radius: 4px;
+      outline: none;
+    }
+  }
+}
+
+.house {
+  display: flex;
+  gap: 20px;
+  &__item {
+    width: calc((100% - 20px) / 2);
+  }
+  &__input {
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid $dark-green-color;
+    border-radius: 4px;
+
+    transition-property: border, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+    &:focus,
+    &:hover,
+    &:focus-visible {
+      border: 1px solid $light-green-color;
+      border-radius: 4px;
+      outline: none;
+    }
   }
 }
 
@@ -187,7 +249,6 @@
   display: flex;
   gap: 8px;
   justify-content: center;
-  align-items: center;
 
   &__input {
     -webkit-appearance: none;
@@ -204,31 +265,30 @@
 
   &__text {
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 12px;
     line-height: calc(14 / 12);
-    /* identical to box height */
 
     letter-spacing: 0.03em;
 
-    color: #757575;
-    @media screen and (min-width: 1200px) {
+    color: $black-color;
+    @media screen and (min-width: 1280px) {
       font-size: 14px;
       line-height: calc(24 / 14);
     }
   }
   &__icon {
+    padding-top: 3px;
     width: 16px;
     height: 16px;
   }
 
   &__link {
-    color: var(--accent-color);
+    color: $light-green-color;
   }
 }
 .check-on {
+  fill: $light-green-color;
   opacity: 0;
 }
 .check-off {
