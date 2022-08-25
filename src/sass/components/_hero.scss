@@ -3,6 +3,10 @@
 .section__hero {
   padding-top: 60px;
   padding-bottom: 50px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 159px;
+  }
 }
 
 .hero__container {
@@ -18,7 +22,13 @@
     font-size: 42px;
     line-height: 120%;
     margin-bottom: 44px;
-    max-width: 537px;
+    width: 537px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    margin-bottom: 28px;
+    width: 502px;
   }
 }
 
@@ -28,8 +38,12 @@
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    max-width: 336px;
+    width: 336px;
     margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 502px;
   }
 }
 
@@ -54,6 +68,11 @@
   position: absolute;
   top: 69px;
   right: 32px;
+
+  @media screen and (min-width: 1280px) {
+    top: -180px;
+    right: 16px;
+  }
 }
 
 .slider__area {
