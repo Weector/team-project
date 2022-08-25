@@ -5,7 +5,7 @@
   background-position: bottom;
   background-size: 100% auto;
   background-image: url(../images/footer/footer-bg320.png);
-
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -26,7 +26,7 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/footer/footer-bg1211.png);
-
+    background-size: 1248px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -137,8 +137,7 @@
 .footer-rights {
   font-size: 10px;
   line-height: 1.2;
-  margin-left: auto;
-  margin-right: auto;
+
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -198,9 +197,8 @@
 
 .subscribe__warning--footer {
   position: absolute;
-  bottom: -2px;
+  top: 73px;
   left: 0;
-  transform: translateY(-100%);
   display: flex;
   align-items: center;
   font-size: 10px;
