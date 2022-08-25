@@ -19,7 +19,7 @@
     padding-top: 100px;
     padding-bottom: 141px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -67,7 +67,7 @@
       padding: 20px 20px;
       border: 14px solid $yellow-main-color;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       padding: 25px 24px;
       border: 16px solid $yellow-main-color;
       &:hover,
@@ -129,7 +129,7 @@
       width: calc((100% - 32px) / 2);
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 40px;
     &__item {
       width: calc((100% - 64px) / 3);
