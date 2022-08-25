@@ -89,6 +89,10 @@
     }
   }
 }
+.header-nav-link.current {
+  color: $light-green-color;
+  text-decoration: underline;
+}
 
 .header-nav__item {
   @media screen and (min-width: 768px) {
@@ -107,6 +111,10 @@
   text-align: right;
   height: 32px;
   display: none;
+
+  &:hover {
+    background-color: $light-green-hover;
+  }
 
   @media screen and (min-width: 768px) {
     display: block;
