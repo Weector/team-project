@@ -66,6 +66,22 @@
   }
 }
 
+.subscribe__warning {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform: translateY(100%);
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 150%;
+  color: #ff705d;
+}
+
+.subscribe__icon {
+  margin-right: 4px;
+}
+
 .subscribe__button {
   width: 106px;
   height: 42px;
