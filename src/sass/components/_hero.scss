@@ -63,8 +63,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
-    height: 360px;
+    width: 610px;
+    height: 620px;
   }
   position: relative;
 }
@@ -81,6 +81,7 @@
   @media screen and (min-width: 1280px) {
     width: 580px;
     height: 580px;
+    border-width: 26px;
   }
 }
 
