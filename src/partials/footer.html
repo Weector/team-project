@@ -24,35 +24,44 @@
         </li>
       </ul>
 
-      <form class="fotter-form">
-        <h3 class="fotter-form__legend">Subscribe</h3>
+      <form class="footer-form">
+        <h3 class="footer-form__title">Subscribe</h3>
         <label class="">
           <input
+            class="footer-form__input"
             type="email"
             name="mail"
-            class="fotter-form__mail"
             placeholder="Enter your email"
+            required
           />
+          <span class="subscribe__warning--footer">
+            <svg class="subscribe__icon--footer" width="11px" height="11px">
+              <use href="./images/icons/icons.svg#warning"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </span>
         </label>
 
-        <button type="submit" class="footer__button">Subscribe</button>
-        <p class="footter__information">
+        <button type="submit" class="button footer-form__button">
+          Subscribe
+        </button>
+        <p class="footer__agreement">
           By subscribing you agree to with our
-          <a class="footer__link" href=""> Privacy Policy</a>
+          <a class="footer-form__link" href=""> Privacy Policy</a>
         </p>
       </form>
     </div>
 
-    <div class="fotter-tab">
-      <ul class="footter-site">
-        <li class="footter-site__iten">
-          <a class="footter-site__link" href="">Privacy Policy</a>
+    <div class="footer-tab">
+      <ul class="footer-site">
+        <li class="footer-site__iten">
+          <a class="footer-site__link" href="">Privacy Policy</a>
         </li>
-        <li class="footter-site__iten">
-          <a class="footter-site__link" href="">Terms of Service</a>
+        <li class="footer-site__iten">
+          <a class="footer-site__link" href="">Terms of Service</a>
         </li>
-        <li class="footter-site__iten">
-          <a class="footter-site__link" href="">Cookies Settings</a>
+        <li class="footer-site__iten">
+          <a class="footer-site__link" href="">Cookies Settings</a>
         </li>
       </ul>
       <p class="footer-rights">2022 FoodSta. All right reserved.</p>
