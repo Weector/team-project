@@ -84,6 +84,9 @@
   text-decoration: none;
   line-height: 1.14;
   color: $text-color-black;
+  &:hover {
+    color: $dark-green-color;
+  }
 }
 
 .footer-tab {

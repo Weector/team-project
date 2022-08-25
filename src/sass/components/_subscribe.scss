@@ -102,6 +102,10 @@
     padding-top: 10px;
     padding-bottom: 11px;
   }
+
+  &:hover {
+    background-color: $light-green-hover;
+  }
 }
 
 .subscribe__img {
