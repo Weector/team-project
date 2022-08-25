@@ -1,9 +1,16 @@
 <!--OFFERINGS-->
 
-<section class="section__offering">
+<section class="section__offering" id="offerins">
   <div class="container">
     <div class="offering__apple-box">
-      <img class="offerings__apple-img" src="./images/offerings/apple202.png" />
+      <div class="offerings__apple-border">
+        <img
+          class="offerings__apple-img"
+          src="./images/offerings/apple202.png"
+          alt="an apple"
+        />
+        <div class="offerings__shadow"></div>
+      </div>
     </div>
     <div>
       <h2 class="offerings__title">What’s Special About Our Offerings</h2>
@@ -13,17 +20,21 @@
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
       <div>
-        <svg class="offerings__icons" width="26.92" height="26.68">
-          <use href="./images/icons/svg-files/icons.svg#rocket"></use>
-        </svg>
+        <div class="offerings__icon-box">
+          <svg class="offerings__icons" width="34" height="34">
+            <use href="./images/icons/icons.svg#rocket"></use>
+          </svg>
+        </div>
         <h3 class="offerings__icons-title">Fasest Delivery</h3>
         <p class="offerings__icons-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros.
         </p>
-        <svg class="offerings__icons" width="21.25" height="28">
-          <use href="./images/icons/svg-files/icons.svg#touch"></use>
-        </svg>
+        <div class="offerings__icon-box">
+          <svg class="offerings__icons" width="33" height="34">
+            <use href="./images/icons/icons.svg#touch"></use>
+          </svg>
+        </div>
         <h3 class="offerings__icons-title">Easy To Order</h3>
         <p class="offerings__icons-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -32,10 +43,12 @@
       </div>
       <div>
         <button class="offerings__btn" type="button">Order Now</button>
-        <span class="offerings__btn-text">Read More</span>
-        <svg width="9" height="9">
-          <use href="./images/icons/svg-files/icons.svg#arrow-next"></use>
-        </svg>
+        <a class="offerings__link-text">
+          <span>Read More</span>
+          <svg class="offerings__link-icon" width="9" height="9">
+            <use href="./images/icons/icons.svg#arrow-next"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
