@@ -5,6 +5,10 @@
   padding-bottom: 50px;
 }
 
+.hero__container {
+  position: relative;
+}
+
 .hero__title {
   margin-bottom: 28px;
   font-size: 28px;
@@ -47,18 +51,23 @@
 // }
 
 .slider {
+  position: absolute;
+  top: 69px;
+  right: 32px;
+}
+
+.slider__area {
   display: none;
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 350px;
+    height: 360px;
   }
+  position: relative;
 }
-
-// .slider__img {
-//   display: block;
-// }
 
 .slider__field {
   display: flex;
@@ -68,10 +77,52 @@
   height: 320px;
   border: 14px solid $yellow-main-color;
   border-radius: 50%;
+
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+  }
 }
 
 .hero-slider__btn {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: 34px;
+  height: 28px;
+  border-width: 0;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  &:hover,
+  &:focus .slider__icon {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .slider__icon {
+    color: $dark-green-color;
+  }
+
+  cursor: pointer;
+
+  &:last-child {
+    position: absolute;
+    top: 164px;
+    right: 5px;
+  }
+
+  &:first-child {
+    position: absolute;
+    top: 164px;
+    left: 5px;
+  }
+}
+
+.slider__icon {
+  fill: currentColor;
 }

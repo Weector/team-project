@@ -1,7 +1,7 @@
 <!--HERO-->
 
 <section class="section__hero" id="hero">
-  <div class="container">
+  <div class="container hero__container">
     <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
     <p class="hero__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -9,28 +9,36 @@
       ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
     </p>
     <button type="button" class="hero__button">Order Now</button>
-  </div>
 
-  <!--SLIDER MUST BE HERE-->
-  <div class="slider">
-    <button class="hero-slider__btn" type="button">
-      <svg class="slider__arrow" width="20px" height="11.5px">
-        <use href="./images/icons/icons.svg#arrow-previous"></use>
-      </svg>
-    </button>
-    <div class="slider__field">
-      <img
-        clas="slider__img"
-        src="./images/hero/heroavocado292.png"
-        alt="food"
-        width="292"
-        height="292"
-      />
+    <!--SLIDER MUST BE HERE-->
+    <div class="slider">
+      <div class="slider__area">
+        <button class="hero-slider__btn" type="button">
+          <svg class="slider__arrow" width="20px" height="25px">
+            <use
+              class="slider__icon"
+              href="./images/icons/icons.svg#arrow-previous"
+            ></use>
+          </svg>
+        </button>
+        <div class="slider__field">
+          <img
+            clas="slider__img"
+            src="./images/hero/heroavocado292.png"
+            alt="food"
+            width="292"
+            height="292"
+          />
+        </div>
+        <button class="hero-slider__btn" type="button">
+          <svg class="slider__arrow" width="20px" height="25px">
+            <use
+              class="slider__icon"
+              href="./images/icons/icons.svg#arrow-next"
+            ></use>
+          </svg>
+        </button>
+      </div>
     </div>
-    <button class="hero-slider__btn" type="button">
-      <svg class="slider__arrow" width="20px" height="11.5px">
-        <use href="./images/icons/icons.svg#arrow-next"></use>
-      </svg>
-    </button>
   </div>
 </section>
