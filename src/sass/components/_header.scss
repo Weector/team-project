@@ -112,6 +112,10 @@
   height: 32px;
   display: none;
 
+  &:hover {
+    background-color: $light-green-hover;
+  }
+
   @media screen and (min-width: 768px) {
     display: block;
   }
