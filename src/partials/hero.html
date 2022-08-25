@@ -11,7 +11,7 @@
     <button type="button" class="hero__button">Order Now</button>
 
     <!--SLIDER MUST BE HERE-->
-    <div class="slider">
+    <div class="slider_js">
       <div class="slider__area">
         <button class="hero-slider__btn" type="button">
           <svg class="slider__arrow" width="11.5" height="20">
@@ -24,10 +24,16 @@
         <div class="slider__field">
           <img
             clas="slider__img"
+            srcset="
+              ./images/hero/heroavocado292.png   292w,
+              ./images/hero/heroavocado528.png   528w,
+              ./images/hero/heroavocado584.png   584w,
+              ./images/hero/heroavocado1056.png 1056w
+            "
+            sizes="(min-width: 768px) 292px, (min-width: 1280px) 528px, 100vw"
             src="./images/hero/heroavocado292.png"
             alt="food"
-            width="292"
-            height="292"
+            loading="lazy"
           />
         </div>
         <button class="hero-slider__btn" type="button">
