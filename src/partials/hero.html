@@ -1,7 +1,7 @@
 <!--HERO-->
 
 <section class="section__hero" id="hero">
-  <div class="container">
+  <div class="container hero__container">
     <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
     <p class="hero__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -11,12 +11,41 @@
     <button type="button" class="hero__button" data-modal-open>
       Order Now
     </button>
-  </div>
 
-  <!--SLIDER MUST BE HERE-->
-  <div>
-    <button class="hero-slider__btn" type="button"></button>
-    <img />
-    <button class="hero-slider__btn" type="button"></button>
+    <!--SLIDER MUST BE HERE-->
+    <div class="slider_js">
+      <div class="slider__area">
+        <button class="hero-slider__btn" type="button">
+          <svg class="slider__arrow" width="11.5" height="20">
+            <use
+              class="slider__icon"
+              href="./images/icons/icons.svg#arrow-previous"
+            ></use>
+          </svg>
+        </button>
+        <div class="slider__field">
+          <img
+            clas="slider__img"
+            srcset="
+              ./images/hero/heroballs292.png   292w,
+              ./images/hero/heroballs528.png   528w,
+              ./images/hero/heroballs584.png   584w,
+              ./images/hero/heroballs1056.png 1056w
+            "
+            sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
+            src="./images/hero/heroballs292.png"
+            alt="food"
+          />
+        </div>
+        <button class="hero-slider__btn" type="button">
+          <svg class="slider__arrow" width="11.5" height="20">
+            <use
+              class="slider__icon"
+              href="./images/icons/icons.svg#arrow-next"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
