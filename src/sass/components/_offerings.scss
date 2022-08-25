@@ -7,11 +7,27 @@
     padding-bottom: 60px;   
     background-image: url(../images/offerings/offerings-bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: 100% 1050px;
+    background-size: 100% 100%;
     background-position: top;
 
     @media screen and (min-width: 480px) {
-            max-width: 480px;
+            
+        }
+
+    @media screen and (min-width: 768px) {
+            position: relative;
+            max-width: 768px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-image: url(../images/offerings/offerings-bg-tablet.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: top;
+        
+        }
+
+     @media screen and (min-width: 768px) {
+            width: 768px;
         }
 }
 
@@ -24,6 +40,18 @@
     margin-bottom: 72px;
     background-color: $white-color;
     border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        left: 43px;
+        top: 260px;
+        width: 326px;
+        height: 326px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $white-color;
+        border-radius: 50%;
+    }
     
 }
 
@@ -35,13 +63,30 @@
     height: 280px;
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+     position: absolute;
+     left: -14px;
+     top: -14px;
+     width: 357px;
+     height: 357px;
+     border: 3px solid rgba(255, 255, 255, 0.5);
+     border-radius: 50%;
+    }
+
 }
 
 .offerings__apple-img {
     position: absolute;
     left: 37px;
     top: -33px;
-    
+
+    @media screen and (min-width: 768px) {
+     position: absolute;
+     left: 46px;
+     top: -43px;
+    }
+
 }
 
 .offerings__shadow {
@@ -53,17 +98,50 @@
     background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%,
                     rgba(105, 105, 105, 0) 100%);
                       filter: blur(13.2364px);
+
+                    @media screen and (min-width: 768px) {
+                        position: absolute;
+                            left: 94px;
+                            top: 255px;
+                            width: 164px;
+                            height: 56px;
+                            background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%,
+                                            rgba(105, 105, 105, 0) 100%);
+                                              filter: blur(13.2364px);
+                    }
 }
 
 .offerings__title {
     margin-bottom: 28px;
     font-size: 28px;
     line-height: calc(33/28);
+
+    @media screen and (min-width: 768px) {
+        padding-top: 554px;
+        padding-right: 62px;
+        font-size: 42px;
+        line-height: calc(49/42);
+    }
 }
 
 .offerings__text {
     margin-bottom: 28px;
     line-height: calc(16/14);
+
+    @media screen and (min-width: 768px) {
+        margin-right: 200px;
+        font-size: 16px;
+        line-height: calc(19/16);
+    }
+}
+
+.offerings__flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 116px;
+    }
 }
 
 .offerings__icon-box {
@@ -91,13 +169,16 @@
 .offerings__icons-text {
     margin-bottom: 28px;
     line-height: calc(16/14);
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
 }
 
 .offerings__btn {
     margin-right: 20.5px;
     width: 130px;
-    padding-top: 10px;
-    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-bottom: 8px;
     line-height: 150%;
     background: $white-color;
     border: 2px solid #7EB101;
