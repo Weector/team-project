@@ -48,7 +48,6 @@
 .offerings__container {
   display: flex;
   position: relative;
-  
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -76,7 +75,6 @@
   background-color: $white-color;
   border-radius: 50%;
   outline: 3px solid rgba(255, 255, 255, 0.5);
-  
 
   @media screen and (max-width: 767px) {
     width: 280px;
@@ -114,29 +112,29 @@
 }
 
 .apple-tablet-one {
-    position: absolute;
-    top: 156px;
-    right: 140px;
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  position: absolute;
+  top: 156px;
+  right: 140px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-        @media screen and (min-width: 1280px) {
-            display: none;
-        }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .apple-tablet-two {
-    position: absolute;
-    right: 0;
-    top: 231px;
-    @media screen and (max-width: 767px) {
-            display: none;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            display: none;
-        }
+  position: absolute;
+  right: 0;
+  top: 231px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .offerings__shadow {
@@ -166,7 +164,11 @@
   @media screen and (min-width: 1280px) {
     width: 252px;
     height: 87px;
-    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #2f583f 0%,
+      rgba(105, 105, 105, 0) 100%
+    );
     filter: blur(26px);
   }
 }
@@ -174,12 +176,12 @@
 .offerings__title {
   margin-bottom: 28px;
   font-size: 28px;
-  line-height: calc(33/28);
+  line-height: calc(33 / 28);
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-right: 62px;
     font-size: 42px;
-    line-height: calc(49/42)
+    line-height: calc(49 / 42);
   }
 
   @media screen and (min-width: 1280px) {
@@ -191,13 +193,12 @@
 .offerings__text {
   margin-bottom: 28px;
   font-size: 14px;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 200px;
     font-size: 16px;
-    line-height: calc(19/16);
-
+    line-height: calc(19 / 16);
   }
 
   @media screen and (min-width: 1280px) {
@@ -253,8 +254,6 @@
     margin-bottom: 40px;
     line-height: 150%;
   }
-
-
 }
 
 .offerings__btn {
@@ -282,8 +281,7 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 13px;
-} 
-
+  }
 }
 
 .offerings__link-text {
