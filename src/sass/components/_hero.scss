@@ -181,10 +181,10 @@
 
 .slider__arrow {
   width: 20px;
-  height: 25px;
+  height: 100%;
 
   @media screen and (min-width: 1280px) {
-    height: 30px;
-    width: 35px;
+    width: 30px;
+    height: 100%;
   }
 }
