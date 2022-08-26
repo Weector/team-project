@@ -87,18 +87,25 @@
     display: block;
     padding: 16px;
     min-width: 130px;
+
     transition: background-color $timing-function;
+
+    
+
 
     &:hover,
     &:focus {
       background-color: $light-green-color;
+      
     }
   }
 
   @media screen and(min-width: 768px) {
     font-size: 14px;
     line-height: 1.14;
+
     transition: text-decoration $timing-function, font-weight $timing-function, font-size $timing-function,color $timing-function;
+
 
     &:hover,
     &:focus {
