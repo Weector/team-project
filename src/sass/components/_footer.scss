@@ -84,6 +84,7 @@
   text-decoration: none;
   line-height: 1.14;
   color: $text-color-black;
+  transition: color $timing-function;
   &:hover,
   &:focus {
     color: $dark-green-color;
@@ -159,6 +160,8 @@
 
 .footer-form__title {
   margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 150%;
 }
 
 .footer-form__input {
@@ -187,7 +190,7 @@
   @media screen and (min-width: 768px) {
     width: 279px;
     margin-right: 14px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 }
 
@@ -198,7 +201,7 @@
 
 .subscribe__warning--footer {
   position: absolute;
-  bottom: 72px;
+  bottom: 75px;
   left: 0;
   display: flex;
   align-items: center;
@@ -208,7 +211,7 @@
   opacity: 0;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    bottom: 12px;
+    bottom: 15px;
   }
 }
 
@@ -224,6 +227,7 @@
   background-color: $white-color;
   border: 0.854167px solid $dark-green-color;
   border-radius: 30px;
+  transition: background-color $timing-function;
 
   @media screen and (max-width: 767px) {
     position: absolute;
