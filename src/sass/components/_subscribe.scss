@@ -103,7 +103,8 @@
     padding-bottom: 11px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $light-green-hover;
   }
 }

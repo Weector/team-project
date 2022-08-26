@@ -84,7 +84,8 @@
   text-decoration: none;
   line-height: 1.14;
   color: $text-color-black;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $dark-green-color;
   }
 }
@@ -198,15 +199,18 @@
 
 .subscribe__warning--footer {
   position: absolute;
-  bottom: -2px;
+  bottom: 72px;
   left: 0;
-  transform: translateY(-100%);
   display: flex;
   align-items: center;
   font-size: 10px;
   line-height: 150%;
   color: #ff705d;
   opacity: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    bottom: 12px;
+  }
 }
 
 .subscribe__icon--footer {
@@ -229,7 +233,8 @@
     transform: translateY(75%);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $yellow-main-color;
   }
 }
