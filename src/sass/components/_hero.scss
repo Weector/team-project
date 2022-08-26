@@ -66,6 +66,12 @@
   }
 }
 
+/**
+  |============================
+  | Slider
+  |============================
+*/
+
 .slider_js {
   display: none;
 
@@ -77,7 +83,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: -170px;
+    top: -145px;
     right: 16px;
   }
 }
@@ -86,21 +92,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
-  height: 360px;
+  width: 320px;
+  height: 320px;
 
   @media screen and (min-width: 1280px) {
-    width: 610px;
-    height: 620px;
+    width: 580px;
+    height: 580px;
   }
   position: relative;
 }
 
 .slider__field {
+  overflow: hidden;
   justify-content: center;
   align-content: stretch;
   border: 14px solid $yellow-main-color;
   border-radius: 50%;
+  width: 320px;
+  height: 320px;
 
   @media screen and (min-width: 1280px) {
     width: 580px;
@@ -112,42 +121,51 @@
 .hero-slider__btn {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 28px;
+  padding: 0;
   border-width: 0;
   border-radius: 4px;
   background-color: $white-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus .slider__icon {
+  z-index: 10;
+
+  &:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-  }
+    border-radius: 10px;
 
-  &:hover .slider__icon {
-    color: $dark-green-color;
+    .slider__icon {
+      fill: $dark-green-color;
+    }
   }
 
   cursor: pointer;
 
   &:last-child {
     position: absolute;
-    top: 164px;
-    right: 5px;
+    top: 146px;
+    right: -10px;
 
     @media screen and (min-width: 1280px) {
-      top: 294px;
+      top: 270px;
+      right: -10px;
     }
   }
 
   &:first-child {
     position: absolute;
-    top: 164px;
-    left: 5px;
+    top: 146px;
+    left: -10px;
 
     @media screen and (min-width: 1280px) {
-      top: 294px;
+      top: 270px;
+      left: -10px;
     }
   }
 
@@ -157,16 +175,16 @@
   }
 }
 
+.slider__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .slider__arrow {
   width: 20px;
   height: 25px;
 
   @media screen and (min-width: 1280px) {
-    width: 30px;
-    height: 40px;
+    height: 30px;
+    width: 35px;
   }
-}
-
-.slider__icon {
-  fill: currentColor;
 }
