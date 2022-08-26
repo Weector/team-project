@@ -69,7 +69,8 @@
     padding: 0;
     padding-left: 42px;
 
-    border: 1px solid $dark-green-color;
+    color: $input-text-colr;
+    border: 1px solid $yellow-main-color;
     border-radius: 4px;
 
     transition-property: border, border-radius;
@@ -81,7 +82,7 @@
   &__input:focus,
   &__input:hover,
   &__input:focus-visible {
-    border: 1px solid $light-green-color;
+    border: 1px solid $yellow-main-color;
     border-radius: 4px;
     outline: none;
   }
@@ -99,7 +100,7 @@
 
   &__input:focus + &__icon,
   &__input:hover + &__icon {
-    fill: $light-green-color;
+    fill: $yellow-main-color;
   }
 
   &__textarea {
@@ -107,8 +108,9 @@
     height: 60px;
     padding: 12px 16px;
 
-    border: 1px solid $dark-green-color;
+    border: 1px solid $yellow-main-color;
     border-radius: 4px;
+    color: $input-text-colr;
 
     transition-property: border, border-radius;
     transition-duration: 250ms;
@@ -118,7 +120,7 @@
     &:focus,
     &:hover,
     &:focus-visible {
-      border: 1px solid $light-green-color;
+      border: 1px solid $yellow-main-color;
       border-radius: 4px;
       outline: none;
     }
@@ -142,14 +144,14 @@
     color: $text-color-black;
 
     border: 0;
-    background-color: $light-green-color;
+    background-color: $yellow-main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
     &:focus,
     &:hover,
     &:focus-visible {
-      border: 1px solid $light-green-color;
+      border: 0;
       border-radius: 4px;
       background-color: $dark-green-color;
       outline: none;
@@ -171,7 +173,7 @@
     align-items: center;
 
     border-radius: 50%;
-    background-color: $light-green-color;
+    background-color: $yellow-main-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     transition-property: fill;
@@ -201,8 +203,9 @@
   &__input {
     margin-top: 5px;
     width: 100%;
-    border: 1px solid $dark-green-color;
+    border: 1px solid $yellow-main-color;
     border-radius: 4px;
+    color: $input-text-colr;
 
     transition-property: border, border-radius;
     transition-duration: 250ms;
@@ -211,7 +214,7 @@
     &:focus,
     &:hover,
     &:focus-visible {
-      border: 1px solid $light-green-color;
+      border: 1px solid $yellow-main-color;
       border-radius: 4px;
       outline: none;
     }
@@ -227,8 +230,9 @@
   &__input {
     margin-top: 5px;
     width: 100%;
-    border: 1px solid $dark-green-color;
+    border: 1px solid $yellow-main-color;
     border-radius: 4px;
+    color: $input-text-colr;
 
     transition-property: border, border-radius;
     transition-duration: 250ms;
@@ -238,7 +242,7 @@
     &:focus,
     &:hover,
     &:focus-visible {
-      border: 1px solid $light-green-color;
+      border: 1px solid $yellow-main-color;
       border-radius: 4px;
       outline: none;
     }
@@ -284,11 +288,11 @@
   }
 
   &__link {
-    color: $light-green-color;
+    color: $yellow-main-color;
   }
 }
 .check-on {
-  fill: $light-green-color;
+  fill: $yellow-main-color;
   opacity: 0;
 }
 .check-off {
