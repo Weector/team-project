@@ -1,282 +1,288 @@
 // OFFERINGS
 
-.section__offering {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 41px;
-    padding-bottom: 60px;   
-    background-image: url(../images/offerings/offerings-bg-mobile.svg);
+.offering {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 81px;
+  padding-bottom: 60px;
+  background-image: url(../images/offerings/offerings-bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: -108px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+    background-image: url(../images/offerings/offerings-bg-tablet.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top;
+  }
 
-    @media screen and (min-width: 480px) {
-            
-        }
-
-    @media screen and (min-width: 768px) {
-            margin-top: -108px;    
-            position: relative;
-            width: 100%;
-            padding-top: 604px;
-            padding-bottom: 100px;
-            background-image: url(../images/offerings/offerings-bg-tablet.svg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-position: top;
-        
-        }
-
-    @media screen and (min-width: 1280px) {
-            position: relative;
-            width: 100%;
-            margin-top: -164px;
-            padding-top: 260px;
-            padding-bottom: 131px;
-            background-image: url(../images/offerings/offerings-bg-desktop.svg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-position: top;
-            padding-left: 16px;
-            padding-right: 16px;
-        }
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    width: 100%;
+    margin-top: -164px;
+    padding-top: 260px;
+    padding-bottom: 131px;
+    background-image: url(../images/offerings/offerings-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
-.offerings__flex-desktop {
-        padding-right: 50px;
-        @media screen and (min-width: 1280px) {
-           padding-left: 600px;
-        }
-        
+.offerings__text-block {
+  @media screen and (min-width: 1280px) {
+    width: 573px;
+  }
 }
-    
-.offerings__apple-mega-box {
-    display: flex;
-    justify-content: center;
+
+.offerings__container {
+  display: flex;
+  position: relative;
+  
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 79px;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    gap: 90px;
+  }
 }
 
 .offering__apple-box {
-    position: relative;
-    width: 256px;
-    height: 256px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
-    background-color: $white-color;
-    border-radius: 50%;
+  position: relative;
+  background-color: $white-color;
+  border-radius: 50%;
+  outline: 3px solid rgba(255, 255, 255, 0.5);
+  
 
-    @media screen and (min-width: 768px) {
-        position: relative;
-        left: 43px;
-        top: 260px;
-        width: 326px;
-        height: 326px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: $white-color;
-        border-radius: 50%;
-    }
-    
-        @media screen and (min-width: 1280px) {
-            position: absolute;
-            left: 40px;
-            top: 145px;
-            width: 502px;
-            height: 502px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: $white-color;
-            border-radius: 50%;
-            
-        }
-}
-
-.offerings__apple-border {
-    position: absolute;
-    left: -12px;
-    top: -12px;
+  @media screen and (max-width: 767px) {
     width: 280px;
     height: 280px;
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
+    border: 9px solid $yellow-main-color;
+  }
 
-    @media screen and (min-width: 768px) {
-     position: absolute;
-     left: -14px;
-     top: -14px;
-     width: 357px;
-     height: 357px;
-     border: 3px solid rgba(255, 255, 255, 0.5);
-     border-radius: 50%;
-    }
+  @media screen and (min-width: 768px) {
+    width: 357px;
+    height: 357px;
+    border: 12px solid $yellow-main-color;
+  }
 
-        @media screen and (min-width: 1280px) {
-            position: absolute;
-            left: -24px;
-            top: -24px;
-            width: 550px;
-            height: 550px;
-            border: 3px solid rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-        }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    height: 550px;
+    background-color: $white-color;
+    border: 21px solid $yellow-main-color;
+  }
 }
 
 .offerings__apple-img {
-    position: absolute;
-    left: 37px;
-    top: -33px;
+  position: absolute;
+  left: 13%;
+  bottom: 18%;
 
-    @media screen and (min-width: 768px) {
-      position: absolute;
-      left: 46px;
-      top: -43px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    bottom: 17%;
+  }
+}
+
+.apple-tablet-one {
+    position: absolute;
+    top: 156px;
+    right: 140px;
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 
         @media screen and (min-width: 1280px) {
-          position: absolute;
-          left: 77px;
-          top: -55px;
-        } 
+            display: none;
+        }
+}
 
-        
+.apple-tablet-two {
+    position: absolute;
+    right: 0;
+    top: 231px;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
 }
 
 .offerings__shadow {
+  position: absolute;
+  left: 28%;
+  bottom: 10%;
+  width: 128px;
+  height: 44px;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  filter: blur(13.2364px);
+
+  @media screen and (min-width: 768px) {
     position: absolute;
-    left: 71px;
-    top: 194px;
-    width: 128px;
-    height: 44px;
-    background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%,
-                    rgba(105, 105, 105, 0) 100%);
-                      filter: blur(13.2364px);
+    width: 164px;
+    height: 56px;
+    background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      #2f583f 0%,
+      rgba(105, 105, 105, 0) 100%
+    );
+    filter: blur(13.2364px);
+  }
 
-                    @media screen and (min-width: 768px) {
-                        position: absolute;
-                            left: 94px;
-                            top: 255px;
-                            width: 164px;
-                            height: 56px;
-                            background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%,
-                                            rgba(105, 105, 105, 0) 100%);
-                                              filter: blur(13.2364px);
-
-                    }
-
-                     @media screen and (min-width: 1280px) {
-                        position: absolute;
-                            left: 144px;
-                            top: 400px;
-                            width: 252px;
-                            height: 87px;
-                            background-image: radial-gradient(50% 50% at 50% 50%, #2F583F 0%,
-                                    rgba(105, 105, 105, 0) 100%);
-                            filter: blur(13.2364px);
-                     }
-                                        
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    width: 252px;
+    height: 87px;
+    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+    filter: blur(26px);
+  }
 }
 
 .offerings__title {
-    margin-bottom: 28px;
-    font-size: 28px;
-    line-height: calc(33/28);
+  margin-bottom: 28px;
+  font-size: 28px;
+  line-height: calc(33 / 28);
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        padding-right: 62px;
-        font-size: 42px;
-        line-height: calc(49/42);
-    }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-right: 62px;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
 
-        @media screen and (min-width: 1280px) {
-                font-size: 42px;
-                line-height: calc(49/42);
-        }
+  @media screen and (min-width: 1280px) {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
 }
 
 .offerings__text {
-    margin-bottom: 28px;
-    line-height: calc(16/14);
+  margin-bottom: 28px;
+  line-height: calc(16 / 14);
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        margin-right: 200px;
-        font-size: 16px;
-        line-height: calc(19/16);
-    }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 200px;
+    font-size: 16px;
+    line-height: calc(19 / 16);
 
-        @media screen and (min-width: 1280px) {
-                font-size: 16px;
-                line-height: calc(19/16);
-        }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    width: 500px;
+  }
 }
 
-.offerings__flex {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 116px;
-    }
-}
-
-.offerings__icon-box {
+.offerings__benefits {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8px;
-    height: 48px;
-    width: 48px;
-    background-color: $white-color;
-    border-radius: 50%;
+    gap: 116px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 67px;
+  }
+}
+
+.offerings__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 48px;
+  width: 48px;
+  background-color: $white-color;
+  border-radius: 50%;
 }
 
 .offerings__icons {
-    
-    fill: $dark-green-color;
+  fill: $dark-green-color;
 }
 
 .offerings__icons-title {
-    margin-bottom: 16px;
-    font-size: 18px;
-    line-height: calc(21/18);
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: calc(21 / 18);
 }
 
 .offerings__icons-text {
-    margin-bottom: 28px;
-    line-height: calc(16/14);
-    @media screen and (min-width: 768px) {
-        margin-bottom: 40px;
-    }
+  margin-bottom: 28px;
+  line-height: calc(16 / 14);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+
 }
 
 .offerings__btn {
-    margin-right: 20.5px;
-    width: 130px;
-    padding-top: 9px;
-    padding-bottom: 8px;
-    line-height: 150%;
-    background: $white-color;
-    border: 2px solid #7EB101;
-    border-radius: 30px;
-    cursor: pointer;
+  margin-right: 20.5px;
+  width: 130px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  line-height: 150%;
+  background: $white-color;
+  border: 2px solid $dark-green-color;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $light-green-hover;
+  }
 }
 
 .offerings__link-text {
-    margin-right: 7.5px;
-    font-size: 13.6667px;
-    cursor: pointer;
+  margin-right: 7.5px;
+  font-size: 13.6667px;
+  cursor: pointer;
 
-        font-size: 14px;
-        line-height: calc(16/14);
+  font-size: 14px;
+  line-height: calc(16 / 14);
 
-     &:hover,
-     &:focus,
-     .offerings__link-icon:hover,
-     .offerings__link-icon:focus {
-        font-weight: 800;
-        color: $dark-green-color;
-        fill: $dark-green-color;
-    }
+  &:hover,
+  &:focus,
+  .offerings__link-icon:hover,
+  .offerings__link-icon:focus {
+    font-weight: 800;
+    color: $dark-green-color;
+    fill: $dark-green-color;
+  }
 }
-
