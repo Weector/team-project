@@ -94,6 +94,7 @@
 .subscribe__button {
   width: 106px;
   height: 42px;
+  transition: background-color $timing-function;
   @media screen and (max-width: 767px) {
     position: absolute;
     bottom: -20px;
