@@ -30,7 +30,17 @@
     background-color: #fff;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
     border-radius: 30px 0px 30px 30px;
-    display: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    
+
+    opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      transform: translateX(300%);
+
+      transition: opacity $timing-function, transform $timing-function;
+
 
     @media screen and (max-width: (768px-0.02)) {
       position: absolute;
@@ -48,7 +58,12 @@
 }
 
 .header-nav.is-open {
-  display: flex;
+  
+  opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+    
 }
 
 .header-nav__list {
@@ -72,6 +87,7 @@
     display: block;
     padding: 16px;
     min-width: 130px;
+    transition: background-color $timing-function;
 
     &:hover,
     &:focus {
@@ -82,6 +98,7 @@
   @media screen and(min-width: 768px) {
     font-size: 14px;
     line-height: 1.14;
+    transition: text-decoration $timing-function, font-weight $timing-function, font-size $timing-function,color $timing-function;
 
     &:hover,
     &:focus {
@@ -92,10 +109,20 @@
     }
   }
 }
-.header-nav-link.current {
-  color: $light-green-color;
-  text-decoration: underline;
+
+@media screen and (max-width: (768px-0.02)){
+  .header-nav-link.current {
+      background-color: $light-green-color;
+    }
 }
+
+@media screen and (min-width: 768px){
+  .header-nav-link.current {
+      color: $light-green-color;
+      text-decoration: underline;
+    }
+}
+
 
 .header-nav__item {
   @media screen and (min-width: 768px) {
@@ -114,6 +141,7 @@
   text-align: right;
   height: 32px;
   display: none;
+  transition: background-color $timing-function;
 
   &:hover,
   &:focus {
@@ -141,6 +169,7 @@
 
 .menu-button__icon {
   fill: $dark-green-color;
+  transition: fill $timing-function;
 
   &:hover,
   &:focus {
@@ -163,3 +192,4 @@
 .menu-button.is-open .menu-button__close {
   display: block;
 }
+
