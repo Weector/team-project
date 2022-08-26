@@ -32,15 +32,13 @@
     border-radius: 30px 0px 30px 30px;
     padding-bottom: 0px;
     padding-top: 0px;
-    
 
     opacity: 0;
-      pointer-events: none;
-      visibility: hidden;
-      transform: translateX(300%);
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(300%);
 
-      transition: opacity $timing-function, transform $timing-function;
-
+    transition: opacity $timing-function, transform $timing-function;
 
     @media screen and (max-width: (768px-0.02)) {
       position: absolute;
@@ -58,12 +56,10 @@
 }
 
 .header-nav.is-open {
-  
   opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0%);
-    
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0%);
 }
 
 .header-nav__list {
@@ -90,13 +86,9 @@
 
     transition: background-color $timing-function;
 
-    
-
-
     &:hover,
     &:focus {
       background-color: $light-green-color;
-      
     }
   }
 
@@ -104,8 +96,8 @@
     font-size: 14px;
     line-height: 1.14;
 
-    transition: text-decoration $timing-function, font-weight $timing-function, font-size $timing-function,color $timing-function;
-
+    transition: text-decoration $timing-function, font-weight $timing-function,
+      font-size $timing-function, color $timing-function;
 
     &:hover,
     &:focus {
@@ -117,19 +109,12 @@
   }
 }
 
-@media screen and (max-width: (768px-0.02)){
+@media screen and (min-width: 768px) {
   .header-nav-link.current {
-      background-color: $light-green-color;
-    }
+    color: $light-green-color;
+    text-decoration: underline;
+  }
 }
-
-@media screen and (min-width: 768px){
-  .header-nav-link.current {
-      color: $light-green-color;
-      text-decoration: underline;
-    }
-}
-
 
 .header-nav__item {
   @media screen and (min-width: 768px) {
@@ -199,4 +184,3 @@
 .menu-button.is-open .menu-button__close {
   display: block;
 }
-
