@@ -35,37 +35,29 @@
   }
 }
 .footer-block {
+  margin-bottom: 60px;
   @media screen and (min-width: 1280px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
 .footer-nav {
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-}
-.logo-footer {
-  @media screen and (max-width: 1279px) {
-    margin-bottom: 40px;
-  }
 }
 
 .footer-list {
   @extend %list;
-  margin-bottom: 40px;
-  padding: 0px;
   margin-left: 81px;
+  padding: 0px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     margin-left: 114px;
     gap: 28px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 0px;
-    align-items: flex-start;
-    padding-top: 15px;
   }
 }
 
@@ -107,12 +99,68 @@
   color: $dark-green-color;
 }
 
+.footer-rights {
+  font-size: 10px;
+  line-height: 1.2;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}
+
+.footer-form__title {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.subscribe__form--footer {
+  margin-bottom: 20px;
+}
+
+.footer-form__button {
+  display: block;
+  margin-left: auto;
+  width: 102px;
+  height: 42px;
+  padding: 11px;
+  color: $black-color;
+  background-color: $white-color;
+  border: 0.854167px solid $dark-green-color;
+  border-radius: 30px;
+  transition: background-color $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $yellow-main-color;
+  }
+}
+
+.footer__agreement {
+  font-size: 10px;
+  line-height: calc(12 / 10);
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+}
+
+.footer-form__link {
+  color: $dark-green-color;
+}
+
 .footer-site {
-  padding: 0px;
   display: flex;
-  justify-content: space-around;
   gap: 32px;
-  padding-bottom: 60px;
+  margin-bottom: 40px;
+  padding: 0px;
+  justify-content: space-around;
 
   @media screen and (min-width: 768px) {
     gap: 20px;
@@ -134,125 +182,4 @@
     font-size: 12px;
     line-height: 1.67;
   }
-}
-
-.footer-rights {
-  font-size: 10px;
-  line-height: 1.2;
-
-  text-align: center;
-
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 12px;
-    line-height: 1.7;
-  }
-}
-
-.footer-form {
-  position: relative;
-
-  @media screen and (min-width: 1280px) {
-    margin-left: auto;
-  }
-}
-
-.footer-form__title {
-  margin-bottom: 12px;
-  font-size: 14px;
-  line-height: 150%;
-}
-
-.footer-form__input {
-  width: 100%;
-  padding: 12px;
-  font-size: 12px;
-  line-height: 150%;
-  border-radius: 30px;
-  outline: transparent;
-
-  &:valid {
-    border: 0.854167px solid $dark-green-color;
-  }
-
-  &:invalid {
-    border: 0.854167px solid #ff705d;
-  }
-
-  &:placeholder-shown {
-    border: 0.854167px solid $yellow-main-color;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 82px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 279px;
-    margin-right: 14px;
-    margin-bottom: 20px;
-  }
-}
-
-.footer-form__input:not(:placeholder-shown):focus:invalid:required
-  ~ .subscribe__warning--footer {
-  opacity: 1;
-}
-
-.subscribe__warning--footer {
-  position: absolute;
-  bottom: 75px;
-  left: 0;
-  display: flex;
-  align-items: center;
-  font-size: 10px;
-  line-height: 150%;
-  color: #ff705d;
-  opacity: 0;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    bottom: 15px;
-  }
-}
-
-.subscribe__icon--footer {
-  margin-right: 4px;
-}
-
-.footer-form__button {
-  width: 102px;
-  height: 42px;
-  padding: 11px;
-  color: $black-color;
-  background-color: $white-color;
-  border: 0.854167px solid $dark-green-color;
-  border-radius: 30px;
-  transition: background-color $timing-function;
-
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    top: 62px;
-    right: 0;
-    transform: translateY(75%);
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $yellow-main-color;
-  }
-}
-
-.footer__agreement {
-  margin-bottom: 60px;
-  font-size: 10px;
-  line-height: calc(12 / 10);
-
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-  }
-}
-
-.footer-form__link {
-  color: $dark-green-color;
 }

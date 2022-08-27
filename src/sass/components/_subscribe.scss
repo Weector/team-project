@@ -36,10 +36,16 @@
     line-height: 150%;
   }
 }
+
 .subscribe__form {
-  position: relative;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
+
 .subscribe__input {
+  display: block;
+  margin-bottom: 4px;
   width: 100%;
   padding: 12px;
   font-size: 12px;
@@ -61,7 +67,7 @@
 
   @media screen and (min-width: 768px) {
     width: 395px;
-    margin-right: 18px;
+    margin-right: 22px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -69,22 +75,21 @@
   }
 }
 
-.subscribe__input:not(:placeholder-shown):focus:invalid:required
+.subscribe__input:not(:placeholder-shown):focus:invalid:required,
+.subscribe__input:not(:placeholder-shown):invalid:required
   ~ .subscribe__warning {
   opacity: 1;
 }
 
 .subscribe__warning {
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  transform: translateY(100%);
   display: flex;
+  margin-bottom: 1px;
   align-items: center;
   font-size: 10px;
   line-height: 150%;
   color: #ff705d;
   opacity: 0;
+  transition: opacity $timing-function;
 }
 
 .subscribe__icon {
@@ -92,21 +97,19 @@
 }
 
 .subscribe__button {
-  width: 106px;
+  display: block;
   height: 42px;
+  padding-top: 10px;
+  padding-bottom: 11px;
   transition: background-color $timing-function;
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    bottom: -20px;
-    right: 0;
-    transform: translateY(100%);
-    padding-top: 10px;
-    padding-bottom: 11px;
-  }
 
   &:hover,
   &:focus {
     background-color: $light-green-hover;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
   }
 }
 
