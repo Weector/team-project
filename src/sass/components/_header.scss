@@ -23,8 +23,6 @@
 
 .header-nav {
   margin-left: auto;
-  padding-top: 28px;
-  padding-bottom: 28px;
 
   @media screen and (max-width: (768px-0.02)) {
     background-color: #fff;
@@ -74,7 +72,8 @@
 
 .header-nav-link {
   text-decoration: none;
-
+  display: block;
+  padding: 28px 0;
   font-size: 16px;
   line-height: 1.88;
 
@@ -87,9 +86,9 @@
 
     transition: color $timing-function;
 
-    // &:hover {
-    //   color: $light-green-color;
-    // }
+    &:hover {
+      color: $light-green-color;
+    }
   }
 
   @media screen and(min-width: 768px) {
@@ -102,7 +101,7 @@
     &:hover {
       font-weight: 500;
       font-size: 14px;
-      // color: $light-green-color;
+      color: $light-green-color;
     }
   }
 
@@ -141,7 +140,6 @@
   margin-left: 28px;
   font-size: 14px;
   line-height: 1.5;
-  text-align: right;
   height: 32px;
   display: none;
   transition: background-color $timing-function;
@@ -175,7 +173,8 @@
   }
 }
 
-.burger_menu {
+.burger__menu {
+  display: block;
   width: 25px;
   height: 3px;
   background-color: #7eb101;
@@ -183,8 +182,8 @@
   transition: all 0.35s ease;
 }
 
-.burger_menu:before,
-.burger_menu:after {
+.burger__menu:before,
+.burger__menu:after {
   content: '';
   position: absolute;
   left: 2.5px;
@@ -196,24 +195,24 @@
   transform: translateX(-11.5px);
 }
 
-.burger_menu:before {
+.burger__menu:before {
   transform: translateY(-6.4px);
 }
 
-.burger_menu:after {
+.burger__menu:after {
   transform: translateY(6.4px);
 }
 
-.menu.active .burger_menu {
+.menu.active .burger__menu {
   background-color: transparent;
 }
 
-.menu.active .burger_menu:before {
+.menu.active .burger__menu:before {
   transform: rotate(45deg);
   background-color: #ffe550;
 }
 
-.menu.active .burger_menu:after {
+.menu.active .burger__menu:after {
   transform: rotate(-45deg);
   background-color: #ffe550;
 }
