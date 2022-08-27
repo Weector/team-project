@@ -15,13 +15,12 @@
     padding-bottom: 145px;
     background-image: url(../images/customers-say/customers-say-bg-tablet.svg);
     background-size: 100% 100%;
-    padding-bottom: 114px;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: -71px;
     padding-bottom: 211px;
     padding-top: 100px;
-    margin-bottom: -71px;
     background-image: url(../images/customers-say/customers-say-bg-desktop.svg);
     background-size: 100% 100%;
   }
@@ -138,9 +137,7 @@
   display: block;
   width: 48px;
   height: 48px;
-  // border: 0.5px solid $yellow-main-color;
   border-radius: 50%;
-  // outline: 5px solid white;
   outline-width: 5px;
   outline-style: solid;
   outline-color: white;
