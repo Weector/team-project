@@ -1,4 +1,4 @@
-var sections = $('section'),
+var sections = $('.anchor'),
   nav = $('nav'),
   header_height = $('.header').outerHeight();
 
