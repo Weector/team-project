@@ -144,13 +144,18 @@
   }
 }
 
-.menu-button {
-  background-color: transparent;
-  border: transparent;
-  position: absolute;
-  top: 22px;
-  right: 20px;
+.menu {
+  margin-left: auto;
+  position: relative;
+  padding: 0;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -158,28 +163,45 @@
   }
 }
 
-.menu-button__icon {
-  fill: $dark-green-color;
-  transition: fill $timing-function;
-
-  &:hover,
-  &:focus {
-    fill: $yellow-main-color;
-  }
+.burger_menu {
+  width: 25px;
+  height: 3px;
+  background-color: #7eb101;
+  border-radius: 1.35px;
+  transition: all 0.35s ease;
 }
 
-.menu-button__menu {
-  display: block;
+.burger_menu:before,
+.burger_menu:after {
+  content: '';
+  position: absolute;
+  left: 2.5px;
+  width: 25px;
+  height: 3px;
+  background-color: #7eb101;
+  border-radius: 1.35px;
+  transition: all 0.7s ease;
+  transform: translateX(-11.5px);
 }
 
-.menu-button.is-open .menu-button__menu {
-  display: none;
+.burger_menu:before {
+  transform: translateY(-6.4px);
 }
 
-.menu-button__close {
-  display: none;
+.burger_menu:after {
+  transform: translateY(6.4px);
 }
 
-.menu-button.is-open .menu-button__close {
-  display: block;
+.menu.active .burger_menu {
+  background-color: transparent;
+}
+
+.menu.active .burger_menu:before {
+  transform: rotate(45deg);
+  background-color: #ffe550;
+}
+
+.menu.active .burger_menu:after {
+  transform: rotate(-45deg);
+  background-color: #ffe550;
 }
