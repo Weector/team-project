@@ -25,33 +25,33 @@
           </li>
         </ul>
       </div>
-
-      <form class="footer-form">
+      <div class="footer-form">
         <h3 class="footer-form__title">Subscribe</h3>
-        <label class="">
-          <input
-            class="footer-form__input"
-            type="email"
-            name="mail"
-            placeholder="Enter your email"
-            required
-          />
-          <span class="subscribe__warning--footer">
-            <svg class="subscribe__icon--footer" width="11px" height="11px">
-              <use href="./images/icons/icons.svg#warning"></use>
-            </svg>
-            Not a valid email address (example@email.com)
-          </span>
-        </label>
-
-        <button type="submit" class="button footer-form__button">
-          Subscribe
-        </button>
+        <form class="subscribe__form subscribe__form--footer">
+          <label>
+            <input
+              class="subscribe__input subscribe__input--footer"
+              type="email"
+              name="mail"
+              placeholder="Enter your email"
+              required
+            />
+            <span class="subscribe__warning">
+              <svg class="subscribe__icon" width="11px" height="11px">
+                <use href="./images/icons/icons.svg#warning"></use>
+              </svg>
+              Not a valid email address (example@email.com)</span
+            >
+          </label>
+          <button class="button footer-form__button" type="submit">
+            Subscribe
+          </button>
+        </form>
         <p class="footer__agreement">
           By subscribing you agree to with our
           <a class="footer-form__link" href=""> Privacy Policy</a>
         </p>
-      </form>
+      </div>
     </div>
 
     <div class="footer-tab">
