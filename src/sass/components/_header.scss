@@ -124,6 +124,11 @@
   &::after {
     transform: translateY(6px) scaleX(100%);
   }
+
+  @media screen and (max-width: 767px) {
+    color: $text-color-black;
+    background-color: $light-green-color;
+  }
 }
 
 .header-nav__item {
