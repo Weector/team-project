@@ -25,7 +25,7 @@
     padding-bottom: 100px;
     background-image: url(../images/footer/footer-bg785.png);
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -150,20 +150,21 @@
 .subscribe__input--footer {
   @media screen and (min-width: 768px) {
     width: 279px;
+    margin-right: 13px;
   }
 }
 
 .footer-form__button {
   display: block;
-  margin-left: auto;
-  width: 102px;
   height: 42px;
   padding: 11px;
-  color: $black-color;
   background-color: $white-color;
   border: 0.854167px solid $dark-green-color;
-  border-radius: 30px;
   transition: background-color $timing-function;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
 
   &:hover,
   &:focus {
