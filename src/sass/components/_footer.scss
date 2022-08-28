@@ -189,12 +189,11 @@
 .footer-site {
   display: flex;
   gap: 32px;
-
   padding: 0px;
   justify-content: space-around;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 768px) {

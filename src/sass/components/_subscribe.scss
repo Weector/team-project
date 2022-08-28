@@ -1,6 +1,6 @@
 .subscribe {
-  padding-top: 50px;
-  padding-bottom: 122px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     padding-top: 156px;
@@ -41,6 +41,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+}
+
+.subscribe__label {
+  display: block;
 }
 
 .subscribe__input {
