@@ -1,102 +1,85 @@
 <!--OFFERINGS-->
 
 <section class="offering">
-  <div class="container">
-    <div class="offerings__container">
-      <img
-        class="apple-tablet-one"
+  <div class="container offerings__container">
+    <picture>
+      <source
         srcset="
-          ./images/offerings/apple166.png 166w,
-          ./images/offerings/apple332.png 332w
+          ./images/offerings/Apple-lg-@1x-550.png   550w,
+          ./images/offerings/Apple-lg-@2x-1100.png 1100w
         "
-        sizes="(min-width: 768px) 166px, 100vw"
-        width="166"
-        height="211"
-        src="./images/offerings/apple166.png"
-        alt="an apple"
+        media="(min-width: 1280px)"
+        sizes="(min-width: 1280px) 550px, 100vw"
       />
-      <img
-        class="apple-tablet-two"
+      <source
         srcset="
-          ./images/offerings/apple108.png 108w,
-          ./images/offerings/apple216.png 216w
+          ./images/offerings/Apple-md-@1x-704.png   704w,
+          ./images/offerings/Apple-md-@2x-1408.png 1408w
         "
-        sizes="(min-width: 768px) 108px, 100vw"
-        width="108"
-        height="136"
-        src="./images/offerings/apple108.png"
-        alt="an apple"
+        media="(min-width: 768px)"
+        sizes="(min-width: 768px) 704px, 100vw"
       />
-      <div class="offering__apple-box">
-        <img
-          srcset="
-            ./images/offerings/apple202.png 202w,
-            ./images/offerings/apple258.png 258w,
-            ./images/offerings/apple396.png 396w,
-            ./images/offerings/apple404.png 404w,
-            ./images/offerings/apple515.png 516w,
-            ./images/offerings/apple792.png 792w
-          "
-          sizes="(min-width: 1280px) 396px, (min-width: 768px) 258px, (min-width: 320px) 202px, 100vw"
-          class="offerings__apple-img"
-          src="./images/offerings/apple202.png"
-          alt="an apple"
-        />
-        <div class="offerings__shadow"></div>
-      </div>
-      <div class="offerings__text-block">
-        <h2 class="offerings__title">What’s Special About Our Offerings</h2>
-        <p class="offerings__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-        </p>
-        <div>
-          <ul class="offerings__benefits">
-            <li>
-              <div class="offerings__icon-box">
-                <svg class="offerings__icons" width="34" height="34">
-                  <use href="./images/icons/icons.svg#rocket"></use>
-                </svg>
-              </div>
-              <h3 class="offerings__icons-title">Fasest Delivery</h3>
-              <p class="offerings__icons-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-            </li>
-            <li>
-              <div class="offerings__icon-box">
-                <svg class="offerings__icons" width="33" height="34">
-                  <use href="./images/icons/icons.svg#touch"></use>
-                </svg>
-              </div>
-              <h3 class="offerings__icons-title">Easy To Order</h3>
-              <p class="offerings__icons-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-            </li>
-          </ul>
-          <div>
-            <button
-              class="offerings__btn"
-              type="button"
-              data-modal-button3
-              aria-expanded="false"
-            >
-              Order Now
-            </button>
-            <a class="offerings__link-text">
-              Read More
-              <svg class="offerings__link-icon" width="9" height="9">
-                <use href="./images/icons/icons.svg#arrow-next"></use>
+      <source
+        srcset="
+          ./images/offerings/Apple-sm-@1x-280.png 280w,
+          ./images/offerings/Apple-sm-@2x-560.png 560w
+        "
+        media="(min-width: 480px)"
+        sizes="(min-width: 480px) 280px, 100vw"
+      />
+      <img src="./images/offerings/Apple-sm-@1x-280.png" alt="an apple" />
+    </picture>
+    <div class="offerings__text-block">
+      <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+      <p class="offerings__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <div>
+        <ul class="offerings__benefits">
+          <li>
+            <div class="offerings__icon-box">
+              <svg class="offerings__icons" width="34" height="34">
+                <use href="./images/icons/icons.svg#rocket"></use>
               </svg>
-            </a>
-          </div>
+            </div>
+            <h3 class="offerings__icons-title">Fasest Delivery</h3>
+            <p class="offerings__icons-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+          </li>
+          <li>
+            <div class="offerings__icon-box">
+              <svg class="offerings__icons" width="33" height="34">
+                <use href="./images/icons/icons.svg#touch"></use>
+              </svg>
+            </div>
+            <h3 class="offerings__icons-title">Easy To Order</h3>
+            <p class="offerings__icons-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+          </li>
+        </ul>
+        <div>
+          <button
+            class="offerings__btn"
+            type="button"
+            data-modal-button3
+            aria-expanded="false"
+          >
+            Order Now
+          </button>
+          <a class="offerings__link-text">
+            Read More
+            <svg class="offerings__link-icon" width="9" height="9">
+              <use href="./images/icons/icons.svg#arrow-next"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
-    <div class="anchor" id="favorites"></div>
   </div>
 </section>
