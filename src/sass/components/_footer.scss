@@ -1,15 +1,20 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: url(../images/footer/mobile/orange-rigth253.png),
+    url(../images/footer/mobile/mix-bottom253.png),
+    url(../images/footer/mobile/apple-left253.png);
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% auto;
-  background-image: url(../images/footer/footer-bg320.png);
+  background-position: top 0 right 0, bottom, top 111 left 0;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/footer/footer-bg640.png);
+    background-image: url(../images/footer/mobile/orange-right506.png),
+      url(../images/footer/mobile/mix-bottom506.png),
+      url(../images/footer/mobile/apple-left506.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0, bottom, top 111 left 0;
   }
 
   @media screen and (min-width: 768px) {
