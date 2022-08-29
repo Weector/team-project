@@ -31,7 +31,7 @@ nav.find('.header-nav-link').on('click', function () {
     {
       scrollTop: $(id).offset().top - header_height,
     },
-    500
+    100
   );
 
   return false;
